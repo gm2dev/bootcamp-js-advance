@@ -16,7 +16,7 @@ const promise3 = new Promise((resolve, reject) => {
   }, 1500);
 });
 
-Promise.all([promise1, promise2, promise3])
+Promise.any([promise1, promise2, promise3])
   .then((values) => {
     console.log(values);
   })
